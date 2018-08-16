@@ -1,0 +1,223 @@
+{
+  "preferences": [
+    {
+      "key": "region",
+      "title": "Region",
+      "type": "SELECT",
+      "options": [
+        {
+          "label": "Delhi/NCR",
+          "type": "option",
+          "value": 1
+        },
+        {
+          "label": "Mumbai",
+          "type": "option",
+          "value": 2
+        },
+        {
+          "label": "Kolkata",
+          "type": "option",
+          "value": 3
+        },
+        {
+          "label": "Bengaluru",
+          "type": "option",
+          "value": 4
+        },
+        {
+          "label": "Chennai",
+          "type": "option",
+          "value": 5
+        },
+        {
+          "label": "Hyderabad",
+          "type": "option",
+          "value": 6
+        },
+        {
+          "label": "Jaipur",
+          "type": "option",
+          "value": 7
+        },
+        {
+          "label": "Ahemdabad",
+          "type": "option",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "key": "interests",
+      "title": "Interests",
+      "type": "TAG_CLOUD",
+      "options": [
+        {
+          "label": "All",
+          "type": "all",
+          "value": null
+        },
+        {
+          "label": "Movies",
+          "type": "option",
+          "value": 1
+        },
+        {
+          "label": "Shows",
+          "type": "option",
+          "value": 2
+        },
+        {
+          "label": "Test",
+          "type": "option",
+          "value": 3
+        },
+        {
+          "label": "Test",
+          "type": "option",
+          "value": 4
+        },
+        {
+          "label": "Test",
+          "type": "option",
+          "value": 5
+        },
+        {
+          "label": "Test",
+          "type": "option",
+          "value": 6
+        },
+        {
+          "label": "Test",
+          "type": "option",
+          "value": 7
+        },
+        {
+          "label": "Testtttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt",
+          "type": "option",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "key": "time_slots",
+      "title": "Time Slots",
+      "type": "SLIDER",
+      "min": 0,
+      "max": 24,
+      "step": 6
+    },
+    {
+      "key": "isHD",
+      "title": "Content",
+      "type": "SWITCH",
+      "label": "HD Only"
+    },
+    {
+      "key": "genres",
+      "title": "Genres",
+      "type": "MULTI_SELECT",
+      "options": [
+        {
+          "label": "All",
+          "type": "all",
+          "value": null
+        },
+        {
+          "label": "Action",
+          "type": "option",
+          "value": "action"
+        },
+        {
+          "label": "Adventure",
+          "type": "option",
+          "value": "adventure"
+        },
+        {
+          "label": "Animation",
+          "type": "option",
+          "value": "animation"
+        },
+        {
+          "label": "Classic",
+          "type": "option",
+          "value": "classic"
+        }
+      ]
+    },
+    {
+      "key": "dth_provider",
+      "title": "DTH Provider",
+      "type": "SELECT",
+      "options": [
+        {
+          "label": "Tata Sky",
+          "type": "option",
+          "value": 1
+        },
+        {
+          "label": "Airtel DTH",
+          "type": "option",
+          "value": 2
+        },
+        {
+          "label": "Dish TV",
+          "type": "option",
+          "value": 3
+        },
+        {
+          "label": "Hathway",
+          "type": "option",
+          "value": 4
+        },
+        {
+          "label": "Den Network",
+          "type": "option",
+          "value": 5
+        },
+        {
+          "label": "Videocon DTH",
+          "type": "option",
+          "value": 6
+        },
+        {
+          "label": "Reliance Network",
+          "type": "option",
+          "value": 7
+        },
+        {
+          "label": "Sun TV",
+          "type": "option",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "key": "video_subscriptions",
+      "title": "Video Subscriptions",
+      "type": "TAG_CLOUD",
+      "options": [
+        {
+          "label": "All",
+          "type": "all",
+          "value": null
+        },
+        {
+          "label": "Netflix",
+          "type": "option",
+          "value": 1
+        },
+        {
+          "label": "Amazon Prime",
+          "type": "option",
+          "value": 2
+        },
+        {
+          "label": "Hotstar",
+          "type": "option",
+          "value": 2
+        }
+      ]
+    }
+  ]
+}

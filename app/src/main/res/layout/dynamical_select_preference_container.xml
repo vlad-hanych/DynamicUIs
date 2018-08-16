@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="100dp"
+>
+
+<TextView
+    android:id="@+id/selectPreferenceTitle_txt_DSPC"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="15dp"
+    android:fontFamily="sans-serif-medium"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:text="Content"
+    android:textColor="#A0AAB8"
+    android:textSize="13sp"
+    />
+
+<TextView
+    android:id="@+id/chosenPreference_txt_DSPC"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="30dp"
+    android:layout_marginLeft="20dp"
+    android:gravity="center"
+    android:text="HD Only"
+    android:textSize="16sp"
+    />
+
+<TextView
+    android:id="@+id/textView_changeSelected_DRPC"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginRight="35dp"
+    android:layout_marginBottom="30dp"
+    android:gravity="center"
+    android:text="Change"
+    android:textColor="@color/colorAccent"
+    android:textSize="13sp"
+    />
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/tagPreferenceTitle_txt_DTCPC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Interests"
+        android:textColor="#A0AAB8"
+        android:textSize="13sp"
+        />
+
+    <com.nex3z.flowlayout.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tagPreferenceTitle_txt_DTCPC"
+        android:paddingTop="20dp"
+        android:paddingLeft="23dp"
+        android:id="@+id/tagCloudsDynamicalButtonsContainer_lilbLay_DTCPC"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content"
+        >
+
+    </com.nex3z.flowlayout.FlowLayout>
+
+</RelativeLayout>

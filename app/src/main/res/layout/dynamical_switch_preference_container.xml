@@ -1,0 +1,51 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Content"
+        android:textColor="#A0AAB8"
+        android:textSize="13sp"
+        />
+
+    <TextView
+        android:id="@+id/switchOptionTitle_txt_DSPC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:text="HD Only"
+        android:textSize="16sp"
+        />
+
+    <com.rm.rmswitch.RMSwitch
+        android:id="@+id/switch_swButt_DSPC"
+        android:layout_width="42dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:switchDesign="large"
+        app:state="right"
+        app:switchBkgNotCheckedColor="#d8d8d8"
+        app:switchBkgCheckedColor="#53ce62"
+        app:switchToggleNotCheckedColor="@android:color/white"
+        app:switchToggleCheckedColor="@android:color/white"
+        />
+
+</RelativeLayout>

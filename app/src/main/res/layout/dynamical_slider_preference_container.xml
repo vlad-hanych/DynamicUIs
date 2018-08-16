@@ -1,0 +1,64 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:id="@+id/text"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:textColor="#A0AAB8"
+        android:text="Time Slots"
+        />
+
+        <me.bendik.simplerangeview.SimpleRangeView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/slider_simplrv_DSPC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        app:lineColor="#c6c6c6"
+        app:activeLineColor="@color/colorAccent"
+        app:count="5"
+        app:start="1"
+        app:activeTickColor="@color/colorAccent"
+        app:end="2"
+        app:showFixedLine="false"
+        app:activeThumbRadius="10dp"
+        app:tickColor="#c6c6c6"
+        app:tickRadius="4dp"
+        />
+
+
+     <ImageView
+         android:id="@+id/sun_imgv_DSPC"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         android:layout_marginLeft="20dp"
+         android:layout_marginBottom="10dp"
+         android:src="@drawable/ic_sun"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentBottom="true"
+         />
+
+     <ImageView
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         android:src="@drawable/ic_moon"
+         android:layout_marginRight="20dp"
+         android:layout_marginBottom="10dp"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentBottom="true"
+         />
+</RelativeLayout>

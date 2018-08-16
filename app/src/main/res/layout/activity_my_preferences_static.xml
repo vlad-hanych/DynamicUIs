@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:srcCompat="@drawable/ic_back"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:textColor="@color/myPreferencesHeaderColor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="My Preferences"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#efeff0"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#A0AAB8"
+                    android:gravity="center"
+                    android:text="Region"
+
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="Delhi/NCR"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginRight="35dp"
+                    android:gravity="center"
+                    android:text="Change"
+                    android:textColor="#0689ff"
+                    android:textSize="16sp"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#efeff0"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Interests"
+                    android:textColor="#A0AAB8"
+                    android:textSize="16sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="21dp"
+                    android:layout_marginLeft="25dp"
+                    >
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/stroked_buttons_background"
+                        android:text="All"
+                        android:textAllCaps="false"
+                        android:textColor="@drawable/stroked_buttons_text_color"
+                        />
+
+                    <Button
+                        android:layout_width="65dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/stroked_buttons_background"
+                        android:text="Movies"
+                        android:textAllCaps="false"
+                        android:textColor="@drawable/stroked_buttons_text_color"
+                        />
+
+                    <Button
+                        android:layout_width="65dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/stroked_buttons_background"
+                        android:text="Shows"
+                        android:textAllCaps="false"
+                        android:textColor="@drawable/stroked_buttons_text_color"
+                        />
+
+                    <Button
+                        android:layout_width="65dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/stroked_buttons_background"
+                        android:text="Videos"
+                        android:textAllCaps="false"
+                        android:textColor="@drawable/stroked_buttons_text_color"
+                        />
+
+                    <Button
+                        android:layout_width="65dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/stroked_buttons_background"
+                        android:text="Events"
+                        android:textAllCaps="false"
+                        android:textColor="@drawable/stroked_buttons_text_color"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#efeff0"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#A0AAB8"
+                    android:text="Time Slots"
+                    />
+
+                <me.bendik.simplerangeview.SimpleRangeView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/fixed_rangeview"
+                    android:layout_above="@+id/sun_imgv_DSPC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    app:lineColor="#c6c6c6"
+                    app:activeLineColor="#0f7bfe"
+                    app:count="5"
+                    app:start="1"
+                    app:activeTickColor="#0f7bfe"
+                    app:end="2"
+                    app:showFixedLine="false"
+                    app:tickColor="#c6c6c6"
+                    app:tickRadius="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/sun_imgv_DSPC"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_sun"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_moon"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#efeff0"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#A0AAB8"
+                    android:text="Language"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="21dp"
+                    >
+
+                    <Button
+                        android:layout_width="65dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/stroked_buttons_background"
+                        android:textColor="@drawable/stroked_buttons_text_color"
+                        android:textAllCaps="false"
+                        android:text="Hindi"
+                        />
+
+                    <Button
+                        android:layout_width="65dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/stroked_buttons_background"
+                        android:textColor="@drawable/stroked_buttons_text_color"
+                        android:textAllCaps="false"
+                        android:text="English"
+                        />
+
+                    <Button
+                        android:layout_width="65dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/stroked_buttons_background"
+                        android:textColor="@drawable/stroked_buttons_text_color"
+                        android:textAllCaps="false"
+                        android:text="Both"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#efeff0"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Content"
+                    android:textColor="#A0AAB8"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="HD Only"
+                    android:textSize="20sp"
+                    />
+
+                <com.rm.rmswitch.RMSwitch
+                    android:id="@+id/switch_swButt_DSPC"
+                    android:layout_width="42dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    app:switchDesign="large"
+                    app:state="right"
+                    app:switchBkgNotCheckedColor="#d8d8d8"
+                    app:switchBkgCheckedColor="#53ce62"
+                    app:switchToggleNotCheckedColor="@android:color/white"
+                    app:switchToggleCheckedColor="@android:color/white"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#efeff0"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Genres"
+                    android:textColor="#A0AAB8"
+                    android:textSize="16sp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="All"
+                        android:textSize="20sp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="35dp"
+                        android:layout_alignParentRight="true"
+                        android:textSize="11sp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#1e5284"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Action"
+                        android:textSize="20sp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="35dp"
+                        android:layout_alignParentRight="true"
+                        android:textSize="11sp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#1e5284"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Adventure"
+                        android:textSize="20sp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="35dp"
+                        android:layout_alignParentRight="true"
+                        android:textSize="11sp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#1e5284"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Animation"
+                        android:textSize="20sp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="35dp"
+                        android:layout_alignParentRight="true"
+                        android:textSize="11sp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#1e5284"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Biopic"
+                        android:textSize="20sp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="35dp"
+                        android:layout_alignParentRight="true"
+                        android:textSize="11sp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#1e5284"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Classic"
+                        android:textSize="20sp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="35dp"
+                        android:layout_alignParentRight="true"
+                        android:textSize="11sp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#1e5284"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#efeff0"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="DTH Provider"
+                        android:textColor="#A0AAB8"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="Tata Sky"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginRight="35dp"
+                        android:gravity="center"
+                        android:text="Change"
+                        android:textColor="#0689ff"
+                        android:textSize="16sp"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#efeff0"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Interests"
+                        android:textColor="#A0AAB8"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="21dp"
+                        android:layout_marginLeft="25dp"
+                        >
+
+                        <Button
+                            android:layout_width="40dp"
+                            android:layout_height="35dp"
+                            android:padding="5dp"
+                            android:background="@drawable/stroked_buttons_background"
+                            android:text="All"
+                            android:textAllCaps="false"
+                            android:textColor="@drawable/stroked_buttons_text_color"
+                            />
+
+                        <Button
+                            android:layout_width="65dp"
+                            android:layout_height="35dp"
+                            android:padding="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/stroked_buttons_background"
+                            android:text="Netflix"
+                            android:textAllCaps="false"
+                            android:textColor="@drawable/stroked_buttons_text_color"
+                            />
+
+                        <Button
+                            android:layout_width="110dp"
+                            android:layout_height="35dp"
+                            android:padding="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/stroked_buttons_background"
+                            android:text="Amazon Prime"
+                            android:textAllCaps="false"
+                            android:textColor="@drawable/stroked_buttons_text_color"
+                            />
+
+                        <Button
+                            android:layout_width="65dp"
+                            android:layout_height="35dp"
+                            android:padding="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/stroked_buttons_background"
+                            android:text="Hotstar"
+                            android:textAllCaps="false"
+                            android:textColor="@drawable/stroked_buttons_text_color"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#efeff0"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    >
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
+                        android:background="@android:color/white"
+                        android:textAllCaps="false"
+                        android:textColor="#435773"
+                        android:text="Reset"
+                        />
+
+                    <Button
+                        android:id="@+id/save_butt_AMP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="60"
+                        android:background="#ffe32e"
+                        android:textAllCaps="false"
+                        android:textColor="#435773"
+                        android:text="Save"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

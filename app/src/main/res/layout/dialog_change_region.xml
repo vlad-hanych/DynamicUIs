@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="400dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_weight="90"
+            android:id="@+id/tapToSearch"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@android:color/white"
+            android:hint="Type to Search.."
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="10"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/white"
+            android:src="@drawable/ic_search"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#afb7c3"
+        android:layout_height="1dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:id="@+id/selectDialog"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
